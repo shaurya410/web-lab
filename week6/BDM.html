@@ -1,0 +1,116 @@
+
+<HTML>
+<HEAD>
+<TITLE>BDM</TITLE>
+<Script>
+    
+    function validateForm() {
+var str = document.forms["applicationForm"]["mob"].value;
+if(str.length!=0){
+    
+        alert("Invalid mobile number"); 
+       return false;
+    
+}
+else
+alert("Mobile Number should be 10 digit");
+var stre = document.forms["applicationForm"]["em"].value;
+if (!(stre.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))) {
+        alert("Invalid email-id"); 
+       return false;
+    }
+var strd = document.forms["applicationForm"]["Dob"].value;
+
+
+</Script>
+<link rel="stylesheet" type="text/css" href="BDM.css">
+</HEAD>
+
+
+<body background="backhome.jpg" style="font-family:verdana;">
+<header >
+ <div id= head class ="dropdown"><img src="menu.png"  height="40" width="40" align="left"> 
+<div class="dropdown-content">
+
+<a href="S1.html">  E-Commerce Solutions </a>
+<a href="S2.html"> Email Marketing </a>
+<a href="S3.html">  Online Advertising </a>
+<a href="S4.html"> Pay Per Click </a>
+<a href="S5.html"> Search Engine Optimization</a>
+<a href="S6.html"> Website Design</a>
+</div>
+</div>
+
+    <a id= head href="homepage.html"> BuzzIt! </a>
+    <a id= head href="services.html">  Services   </a>
+    <a id= head href="carop.html" >   CareerOptions   </a>
+    <a id= head href="contactus.html">  Contact us  </a>
+    
+</header>
+
+
+<br><br>
+<div class="default">
+
+<br><br>
+<font size="12" color="white" >Business Development Manager</font>
+<br><br>
+<br><br>
+</div>
+
+
+<div class="second">
+<br><br>
+
+
+<br><br>
+<h2>Job Description</h2>
+ <p>BuzzIt is a digital agency based in New Delhi, India. We specialise in creating digital marketing solutions for web, mobile and social media to help companies engage and inspire their audiences.We are still a young agency, with a strong portfolio comprised of several high profile brands in India and Abroad. We are a small team of skilled and friendly people, very passionate about our work and committed to constantly delivering a top quality service for which we are valued by our clients.<br>
+<br>
+<p>We are looking for an experienced Business Development Manager, who shares our passion and drive, to join our team and open the doors to new fantastic opportunities that will allow us to take the business to the next level.
+<br><br>
+<p>This is the perfect opportunity for someone who is excited by the prospect of growing with the agency in a friendly environment and having a key role in the process.
+<br>
+ 
+<h3>Apply online for this position</h3>
+<br><br>
+<div class="for">
+<form name="applicationForm" action="subfor.jsp" method="post" onsubmit="return validateForm()" >
+  First name:<span style="color:red">*</span><br><br>
+  <input type="text" name="firstname">
+  <br><br>
+  Last name:<span style="color:red">*</span><br><br>
+  <input type="text" name="lastname">
+<br><br>
+  Gender:<span style="color:red">*</span><br><br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+Mobile no:<span style="color:red">*</span><br><br>
+<input type="text"  name="mob" ><br><br>
+Email-id:<span style="color:red">*</span><br><br>
+<input name="em" type="email"><br><br>
+Designation:<br><br>
+  <input type="text" name="Designation"><br><br>
+Date of Birth:<span style="color:red">*</span><br><br>
+ <input  type="text" name="Dob"><br><br>
+LinkedIn profile URL:<br>
+ <input type="text" name="Linkprofile"><br><br>
+<br><br>
+<input  type="submit" value="Submit">
+</form>
+<br><br>
+<br>
+</div>
+</div>
+
+
+ <footer>
+
+
+  <font size="3" color="grey">Contact info:</br>Rohini sec 22,New Delhi India </br>+91 8510829430</br>socialteam@BuzzIt.com</font>
+ 
+</footer> 
+</body>
+
+</HTML>
